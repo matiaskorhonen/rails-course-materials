@@ -91,6 +91,7 @@ true.class
 :symbol.class
 </code>
 
+
 h3. Constants
 
 There are only two basic thing you need to remember about constants:
@@ -216,6 +217,7 @@ Planting our flag on Halley's
 comet,                                                                  
 More still did I want to eat it.}
 
+
 h3. Numbers (Integers and Floats)
 
 The basic datatypes in Ruby are integers and floats.
@@ -232,9 +234,7 @@ The number operators in Ruby are pretty similar to operators in other modern lan
 
 h2. Classes and Objects
 
-
 h2. Methods
-
 
 h2. Comments
 
@@ -244,6 +244,7 @@ For example:
 <code>
 # this is a comment line
 </code>
+
 
 h2. Operators
 
@@ -259,6 +260,7 @@ Examples:
 	number = 123	
 </code>
 
+
 h4. Self assignment
 
 <code>
@@ -273,6 +275,7 @@ h4. Self assignment
 
 If you're used to C-type languages, you might be wondering where are the increment and decrement operators (++ and --), well in Ruby the closest equivalents are "x += 1" and "x -= 1".
 
+
 h4. Multiple assignments
 
 In Ruby you can assign values to multiple variables on one line:
@@ -282,6 +285,7 @@ In Ruby you can assign values to multiple variables on one line:
 	colours, city = ["red", "blue", "green"], "Helsinki"
 </code>
 
+
 h4. Conditional assignment
 
 The operator "||=" checks whether a variable is nil (or inexistent) and assigns an object to it if it is.
@@ -289,6 +293,7 @@ The operator "||=" checks whether a variable is nil (or inexistent) and assigns 
 <code>
 	configuration ||= "default value"
 </code>
+
 
 h3. Comparison Operators
 
@@ -317,6 +322,7 @@ Examples:
 5 <=> 6     # => -1
 </code>
 
+
 h3. And (&&), Or (||), and Not (!)
 
 Both and and && evaluate to true only if both operands are true, their only difference being their precedence.
@@ -344,6 +350,7 @@ h2. Conditionals and Control Flow
 
 Ruby can control the execution of code using conditional branches. A conditional branch takes the result of a test expression and executes a block of code depending whether the test expression is true or false. If the test expression evaluates to the constant false or nil, the test is false; otherwise, it is true. Note that the number zero is considered true, whereas many other programming languages consider it false.
 
+
 h3. if, elsif, else
 
 The behaviour of if .. elsif .. else in Ruby is fairly consistant with most major programming languages, as seen in the following examples:
@@ -368,6 +375,7 @@ If the block executed as result of a test expression is only one line of code, y
   print a # => 5
 </code>
 
+
 h3. unless
 
 The unless-expression is the opposite of the if-expression, the code-block it contains will only be executed if the test expression is false.
@@ -385,6 +393,7 @@ As with the short if-statement shown before, the previous example could be writt
 my_city = "Helsinki"
 print "I don't live in Helsinki" unless my_city == "Helsinki"
 </code>
+
 
 h3. case
 
@@ -407,6 +416,7 @@ The case expressions are very useful when testing the same variable multiple tim
     puts 'Only single-digit numbers are allowed'
   end
 </code>
+
 
 h3. The Ruby Ternary Operator
 
@@ -435,6 +445,7 @@ is equivalent to:
   end
 </code>
 
+
 h2. Loops
 
 h3. while
@@ -460,7 +471,11 @@ The until statement is similar to the while statement in functionality.
 
 Unlike the while statement, the code block for the until loop will execute as long as the expression evaluates to false.
 
+
 h3. for
+
+
+h3. times
 
 
 h3. break
@@ -471,3 +486,19 @@ The "break" keyword causes the loop or conditional in which it appears to exit a
 h3. return
 
 "return value" causes the method in which it appears to exit at that point and return the value specified.
+
+h2. Ruby Ranges
+
+Ranges are used in Ruby to create a range of successive values:
+
+<code>
+  1..5    # Creates a range from 1 to 5, inclusive
+  1...5   # Creates a range from 1 to 4
+</code>
+
+Ranges can also be used with strings, for example:
+
+<code>
+  letters = 'a'..'z'
+  words = 'cab'..'car'
+</code>
