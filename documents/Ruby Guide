@@ -408,6 +408,33 @@ The case expressions are very useful when testing the same variable multiple tim
   end
 </code>
 
+h3. The Ruby Ternary Operator
+
+Ruby has a handy shorhand operator for making decisions:
+
+<code>
+  [condition] ? [true expression] : [false expression]
+</code>
+
+This means that writing this:
+
+<code>
+  customer = "Bob"
+  puts customer == "Bob" ? "Hello Bob!" : "You're not Bob!"
+</code>
+
+is equivalent to:
+
+<code>
+  customer = "Bob"
+
+  if customer == "Bob"
+    puts "Hello Bob!"
+  else
+    puts "You're not Bob!"
+  end
+</code>
+
 h2. Loops
 
 h3. while
@@ -432,7 +459,6 @@ The until statement is similar to the while statement in functionality.
 </code>
 
 Unlike the while statement, the code block for the until loop will execute as long as the expression evaluates to false.
-
 
 h3. for
 
