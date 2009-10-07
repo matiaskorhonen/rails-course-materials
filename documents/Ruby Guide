@@ -1,5 +1,8 @@
 title. Ruby
 
+TODO: Document "==" and "!="
+TODO: Document ranges ".." and "..."
+
 
 h1. Overview
 
@@ -136,7 +139,7 @@ This code will print out "Princess from Alderaan", "Rebel without a cause", and 
 
 h3. Arrays
 
-Arrays are a lot like hashes, but the keys are always consecutive numbers. Also, the first key in an array is always 0. So in an array with 5 items, the last element would be found at array[4] and the first element would be found at array[0]. Arrays in Ruby are pretty similar to arrays in most programming languages, so we won't spend a lot of time explaining them here.
+Arrays are a lot like hashes, but the keys are always consecutive numbers. Also, the first key in an array is always 0. So in an array with 5 items, the last element would be found at array[4] and the first element would be found at array[0].
 
 Using an out of range index will return nil.
 
@@ -214,7 +217,9 @@ More still did I want to eat it.}
 
 h3. Numbers (Integers and Floats)
 
-You can skip this paragraph if you know all the standard number operators. For those who don't, here's a crash course:
+The basic datatypes in Ruby are integers and floats.
+ 
+The number operators in Ruby are pretty similar to operators in other modern languages:
 
 * + addition
 * - subtraction
@@ -243,26 +248,112 @@ h2. Operators
 
 h3. Assignment
 
+Assignment in Ruby is done using the equal operator "=". This is both for variables and objects, but since strings, floats, and integers are actually objects in Ruby, you're always assigning objects.
+
+Examples:
+
+<code>
+	colour = "red"
+	other_colour = String.new("blue")
+	number = 123	
+</code>
+
 h4. Self assignment
+
+<code>
+	x = 1           #=>1
+	x += x          #=>2
+	x -= x          #=>0
+	x += 4          #=>x was 0 so x= + 4 # x is positive 4
+	x *= x          #=>16
+	x **= x         #=>18446744073709551616 # Raise to the power
+	x /= x          #=>1
+</code>
+
+If you're used to C-type languages, you might be wondering where are the increment and decrement operators (++ and --), well in Ruby the closest equivalents are "x += 1" and "x -= 1".
+
 h4. Multiple assignments
+
+In Ruby you can assign values to multiple variables on one line:
+
+<code>
+	colour1, colour2, colour3 = "red", "blue", "green"
+	colours, city = ["red", "blue", "green"], "Helsinki"
+</code>
+
 h4. Conditional assignment
+
+The operator "||=" checks whether a variable is nil (or inexistent) and assigns an object to it if it is.
+
+<code>
+	configuration ||= "default value"
+</code>
 
 h2. Conditionals
 
+Ruby can control the execution of code using conditional branches. A conditional branch takes the result of a test expression and executes a block of code depending whether the test expression is true or false. If the test expression evaluates to the constant false or nil, the test is false; otherwise, it is true. Note that the number zero is considered true, whereas many other programming languages consider it false.
+
 h3. if
+
+<code>
+a = 5
+if a == 4
+  a = 7
+end
+print a # => 5
+</code>
+
+If the block executed as result of a test expression is only one line of code, you can write the if statement after the code. The previous example would become:
+
+<code>
+a = 5
+a = 7 if a == 4
+print a
+</code>
 
 h3. unless
 
+The unless-expression is the opposite of the if-expression, the code-block it contains will only be executed if the test expression is false.
+
+<code>
+my_city = "Helsinki"
+unless my_city == "Helsinki"
+	print "I don't live in Helsinki"
+end
+</code>
+
+As with the short if-statement shown before, the previous example could be written using only two lines of code:
+
+<code>
+my_city = "Helsinki"
+print "I don't live in Helsinki" unless my_city == "Helsinki"
+</code>
+
 h3. case
+
+The case expressions is very useful when testing the same variable multiple times.
+
+FIXME: Write an example that makes sense
+<code>
+	age = 25
+	case age
+		when 0..18
+			puts "Underaged"
+		when 18..65
+			puts "Working age"
+		when 65..120
+			puts "Retired"
+		else
+			puts "Probably deceased"
+		end
+</code>
 
 h2. Loops
 
-h4. while
+h3. while
 
-h4. until
+h3. until
 
-h4. for
+h3. for
 
-h4. break
-
-
+h3. break
