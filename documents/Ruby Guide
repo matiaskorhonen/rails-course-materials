@@ -1,10 +1,6 @@
 title. Ruby
 
 
-
-TODO: Document ranges ".." and "..."
-
-
 h1. Overview
 
 Ruby is an object-orientated language first released in 1995 by Yukihiro Matsumoto ("Matz"). Ruby comes preinstalled on Mac OS X and on most major Linux distributions.  It is also possible to install Ruby in a Microsoft Windows environment. The Ruby language takes fetures and influences from such languages as Perl, Smalltalk, Eiffel, Ada, Lisp, and Python.
@@ -474,9 +470,26 @@ Unlike the while statement, the code block for the until loop will execute as lo
 
 h3. for
 
+Example:
+
+<code>
+  for i in 1..10 do
+      puts i
+  end
+</code>
+
 
 h3. times
 
+Example:
+
+<code>
+  10.times { |i| puts i }
+
+  3.times {
+    puts "Hello"
+  }
+</code>
 
 h3. break
 
