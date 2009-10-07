@@ -1,0 +1,17 @@
+h1{font-family:'Bitsream Vera Serif'}. Rails Course Materials
+
+These are materials and slide which are currently being prepared for a three day Ruby on Rails course.  All the material here is still under development, so I wouldn't use any of it just yet and it may contain serious errors.
+
+h2. License
+
+Unless otherwise mentioned, all content is licensed under a Creative Commons Attribution-Share Alike license.
+
+http://creativecommons.org/licenses/by-sa/3.0/
+
+h2. Authors
+
+Except where otherwise mentioned, you can presume that the authors are:
+
+* Joao Cardoso
+* Matias Korhonen
+
