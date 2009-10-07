@@ -1,4 +1,4 @@
-h1{font-family:'Bitsream Vera Serif'}. Rails Course Materials
+h1. Rails Course Materials
 
 These are materials and slide which are currently being prepared for a three day Ruby on Rails course.  All the material here is still under development, so I wouldn't use any of it just yet and it may contain serious errors.
 
