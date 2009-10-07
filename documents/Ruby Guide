@@ -1,6 +1,7 @@
 title. Ruby
 
-TODO: Document "==" and "!="
+
+
 TODO: Document ranges ".." and "..."
 
 
@@ -289,26 +290,82 @@ The operator "||=" checks whether a variable is nil (or inexistent) and assigns 
 	configuration ||= "default value"
 </code>
 
-h2. Conditionals
+h3. Comparison Operators
+
+==      equivalency
+.eql?   exactly the same as ==
+!=      inequality
+<       less than
+>       greater than
+>=      greater than or equal to
+<=      less than or equal to
+<=>     combined comparison operator.
+        Returns 0 if the values are equal,
+        -1 if the second is greater than the first,
+        and 1 if the first is greater than the second.
+
+Examples:
+
+<code>
+5 == 5      # => true
+5.eql? 4    # => false
+5 != 4      # => true
+4 > 5       # => false
+4 < 5       # => true
+5 <=> 5     # => 0
+5 <=> 2     # => 1
+5 <=> 6     # => -1
+</code>
+
+h3. And (&&), Or (||), and Not (!)
+
+Both and and && evaluate to true only if both operands are true, their only difference being their precedence.
+
+Both or and || evaluate to true if either operand is true, again their only difference is in operator precedence.
+
+As you might guess, both not and ! only differ in precedence.
+
+As a general rule you should only use the NON-WORD operators (&&, ||, and !) as they have a higher precedence than the word operators (and, or, not).
+
+Examples:
+
+<code>
+  x = false
+  y = true
+
+  x && y    # => false
+  x || y    # => true
+  !x        # => true
+  !y        # => false
+</code>
+
+
+h2. Conditionals and Control Flow
 
 Ruby can control the execution of code using conditional branches. A conditional branch takes the result of a test expression and executes a block of code depending whether the test expression is true or false. If the test expression evaluates to the constant false or nil, the test is false; otherwise, it is true. Note that the number zero is considered true, whereas many other programming languages consider it false.
 
-h3. if
+h3. if, elsif, else
+
+The behaviour of if .. elsif .. else in Ruby is fairly consistant with most major programming languages, as seen in the following examples:
 
 <code>
-a = 5
-if a == 4
-  a = 7
-end
-print a # => 5
+  a = 3
+  if a == 4
+    a = 7
+  elsif a < 0
+    a = 0
+  else
+    a = 5
+  end
+  print a # => 5
 </code>
 
-If the block executed as result of a test expression is only one line of code, you can write the if statement after the code. The previous example would become:
+If the block executed as result of a test expression is only one line of code, you can write the if statement after the code. For example:
 
 <code>
-a = 5
-a = 7 if a == 4
-print a
+  a = 5
+  a = 7 if a == 4
+  print a # => 5
 </code>
 
 h3. unless
@@ -331,29 +388,60 @@ print "I don't live in Helsinki" unless my_city == "Helsinki"
 
 h3. case
 
-The case expressions is very useful when testing the same variable multiple times.
+The case expressions are very useful when testing the same variable multiple times.
 
-FIXME: Write an example that makes sense
 <code>
-	age = 25
-	case age
-		when 0..18
-			puts "Underaged"
-		when 18..65
-			puts "Working age"
-		when 65..120
-			puts "Retired"
-		else
-			puts "Probably deceased"
-		end
+  case n
+  when 0 
+    puts 'You typed zero'
+  when 1, 9 
+    puts 'n is a perfect square'
+  when 2 
+    puts 'n is a prime number'
+    puts 'n is an even number'
+  when 3, 5, 7 
+    puts 'n is a prime number'
+  when 4, 6, 8 
+    puts 'n is an even number'
+  else              
+    puts 'Only single-digit numbers are allowed'
+  end
 </code>
 
 h2. Loops
 
 h3. while
 
+The while statement in Ruby is very similar to if and to other languages' while (syntactically):
+
+while <expression>
+  <...code block...>
+end
+
+The code block will be executed again and again, as long as the expression evaluates to true.
+
+
 h3. until
+
+The until statement is similar to the while statement in functionality.
+
+<code>
+  until <expression>
+    <...code block...>
+  end
+</code>
+
+Unlike the while statement, the code block for the until loop will execute as long as the expression evaluates to false.
+
 
 h3. for
 
+
 h3. break
+
+The "break" keyword causes the loop or conditional in which it appears to exit at that point.
+
+
+h3. return
+
+"return value" causes the method in which it appears to exit at that point and return the value specified.
