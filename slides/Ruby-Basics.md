@@ -154,3 +154,37 @@ Single quotes only support two escape sequences:
     \s - space
     \t - tab
 @@@
+
+!SLIDE longstrings
+
+# Very Long Strings
+
+There are several methods for this, but here's a simple one:
+
+@@@ ruby
+    poem = %{My toast has flown from my hand
+    And my toast has gone to the
+    moon.
+    But when I saw it on television,
+    Planting our flag on Halley's
+    comet,
+    More still did I want to eat it.}
+@@@
+
+!SLIDE numbers
+
+# Numbers
+## Integers and Floats
+
+The basic numeric datatypes in Ruby are integers and floats.
+
+Number operators:
+
+@@@
+    +  addition
+    -  subtraction
+    /  division
+    *  multiplication
+    ** exponent (e.g. 26**3 == 263)
+    %  modulus (the remainder of two divided numbers)
+@@@
