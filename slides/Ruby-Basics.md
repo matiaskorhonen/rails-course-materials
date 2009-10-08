@@ -33,7 +33,7 @@ Almost everything in Ruby is an object. Try the following in irb:
 # Constants
 
 * Constants always start with capital letters
-* You can change constant in Ruby, but you shouldn't
+* You can change constants in Ruby, but you shouldn't
 
 @@@ ruby
     Constant = 5    # This is a constant
