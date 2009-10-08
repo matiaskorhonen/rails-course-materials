@@ -11,7 +11,8 @@ task :slides do
   slides = FileList['slides/*.md']
   
   slides.each do |slide|
-    puts slide
-    `slidedown #{slide} > #{slide.chop.chop}html`
+    print slide
+    status = system "slidedown #{slide} > #{slide.chop.chop}html"
+    puts status ? "\t\tdone" : "\t\tFAILED!"
   end
 end
