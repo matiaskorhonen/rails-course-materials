@@ -12,7 +12,7 @@ task :slides do
   
   slides.each do |slide|
     print slide
-    status = system "slidedown #{slide} > #{slide.chop.chop}html"
+    status = system "slidedown '#{slide}' > '#{slide.chop.chop}html'"
     puts status ? "\t\tdone" : "\t\tFAILED!"
   end
 end
