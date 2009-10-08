@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Slides</title>
+    <link href="./stylesheets/slides.css" media="screen" rel="stylesheet" charset="utf-8" type="text/css" />
+    <script src="./javascripts/jquery.js" type="text/javascript"></script>
+    <script src="./javascripts/jquery.easing.js" type="text/javascript"></script>
+    <script src="./javascripts/jquery.hash-changed.js" type="text/javascript"></script>
+    <script src="./javascripts/slides.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="slides">
+      <div id="track">
+        
+          <div class=" cover">
+            <div id="slide-0" class="content">
+              <h1><span style="font-family:'Bitstream Vera Serif', serif;font-size:80%"><span style="color:#a40800">Ruby on Rails</span> Course <span style="color:#8B8B8B">2009</span></span></h1><h2>Ruby: Basics</h2>
+            </div>
+          </div>
+        
+          <div class=" irb">
+            <div id="slide-1" class="content">
+              <h1>Interactive Ruby (irb)</h1><p>Irb is an interactive interface to Ruby</p><ul>
+<li>Mainly used for testing small snippets of code.</li>
+<li>Run by executing <strong>irb</strong> in a terminal</li>
+<li>Online version at <a href="http://tryruby.sophrinix.com">http://tryruby.sophrinix.com</a>
+</li>
+</ul>
+            </div>
+          </div>
+        
+          <div class=" datatypes">
+            <div id="slide-2" class="content">
+              <h1>Datatypes</h1><p>Almost everything in Ruby is an object. Try the following in irb:</p><div class="highlight ruby code highlight"><pre><span class="mi">123</span><span class="o">.</span><span class="n">class</span>
+<span class="mi">999999999999999999999999999999999999999999999</span><span class="o">.</span><span class="n">class</span>
+<span class="kp">nil</span><span class="o">.</span><span class="n">class</span>
+<span class="kp">true</span><span class="o">.</span><span class="n">class</span>
+<span class="s2">"hello world"</span><span class="o">.</span><span class="n">class</span>
+<span class="ss">:symbol</span><span class="o">.</span><span class="n">class</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class=" constants">
+            <div id="slide-3" class="content">
+              <h1>Constants</h1><ul>
+<li>Constants always start with capital letters</li>
+<li>You can change constant in Ruby, but you shouldn't</li>
+</ul>
+<div class="highlight ruby code highlight"><pre><span class="no">Constant</span> <span class="o">=</span> <span class="mi">5</span>    <span class="c1"># This is a constant</span>
+<span class="n">constant</span> <span class="o">=</span> <span class="mi">5</span>    <span class="c1"># This is not</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class=" symbols">
+            <div id="slide-4" class="content">
+              <h1>Symbols</h1><p>Every time you type a string, Ruby makes a new object:</p><div class="highlight ruby code highlight"><pre><span class="n">irb</span><span class="o">&gt;</span> <span class="s2">"live long and prosper"</span><span class="o">.</span><span class="n">object_id</span>
+<span class="o">=&gt;</span> <span class="o">-</span><span class="mi">606662268</span>
+<span class="n">irb</span><span class="o">&gt;</span> <span class="s2">"live long and prosper"</span><span class="o">.</span><span class="n">object_id</span>
+<span class="o">=&gt;</span> <span class="o">-</span><span class="mi">606666538</span>
+</pre></div><p>Notice that the object ID returned by irb is different even for the same two strings.</p>
+            </div>
+          </div>
+        
+          <div class=" symbols">
+            <div id="slide-5" class="content">
+              <p>To save memory Ruby has provided "symbols"</p><div class="highlight ruby code highlight"><pre><span class="n">irb</span><span class="o">&gt;</span> <span class="ss">:live_long_and_prosper</span><span class="o">.</span><span class="n">object_id</span>
+<span class="o">=&gt;</span> <span class="mi">150808</span>
+<span class="n">irb</span><span class="o">&gt;</span> <span class="ss">:live_long_and_prosper</span><span class="o">.</span><span class="n">object_id</span>
+<span class="o">=&gt;</span> <span class="mi">150808</span>
+</pre></div><p>Symbols are often used as hash keys.</p>
+            </div>
+          </div>
+        
+          <div class=" hashes">
+            <div id="slide-6" class="content">
+              <h1>Hashes</h1><ul>
+<li>Hashes are like dictionaries</li>
+<li>You have a key, a reference, and you look it up to find the associated object, the definition.</li>
+</ul>
+<div class="highlight ruby code highlight"><pre><span class="nb">hash</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">:leia</span> <span class="o">=&gt;</span> <span class="s2">"Princess from Alderaan"</span><span class="p">,</span> 
+         <span class="ss">:han</span> <span class="o">=&gt;</span> <span class="s2">"Rebel without a cause"</span><span class="p">,</span>
+         <span class="ss">:luke</span> <span class="o">=&gt;</span> <span class="s2">"Farmboy turned Jedi"</span> <span class="p">}</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class=" arrays">
+            <div id="slide-7" class="content">
+              <h1>Arrays</h1><p>Arrays are a lot like hashes, but the keys are always consecutive numbers.</p><div class="highlight ruby code highlight"><pre><span class="n">array</span> <span class="o">=</span> <span class="o">[</span><span class="s2">"This"</span><span class="p">,</span> <span class="s2">"is"</span><span class="p">,</span> <span class="s2">"an array"</span><span class="o">]</span>
+<span class="nb">puts</span> <span class="n">array</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="c1"># =&gt; "This"</span>
+<span class="nb">puts</span> <span class="n">array</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span> <span class="c1"># =&gt; nil</span>
+</pre></div><p>Using an out of range index will return nil.</p>
+            </div>
+          </div>
+        
+          <div class=" strings">
+            <div id="slide-8" class="content">
+              <h1>Strings</h1><ul>
+<li>String literals</li>
+<li>Single quotes</li>
+<li>Double quotes</li>
+<li>Escape sequences</li>
+<li>Very long strings</li>
+</ul>
+            </div>
+          </div>
+        
+          <div class=" literals">
+            <div id="slide-9" class="content">
+              <h1>String Literals</h1><div class="highlight ruby code highlight"><pre><span class="nb">puts</span> <span class="s1">'Hello world'</span>
+<span class="nb">puts</span> <span class="s2">"Hello world"</span>
+
+<span class="nb">puts</span> <span class="s2">"Betty's pie shop"</span>
+<span class="nb">puts</span> <span class="s1">'Betty\'s pie shop'</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class=" singlequotes">
+            <div id="slide-10" class="content">
+              <h1>Single Quotes</h1><p>Single quotes only support two escape sequences:</p><pre><code>\' - single quote
+\\ - single backslash
+</code></pre>
+            </div>
+          </div>
+        
+          <div class=" doublequotes">
+            <div id="slide-11" class="content">
+              <h1>Double Quotes</h1><ul>
+<li>Double quotes allow for many more escape sequences than single quotes.</li>
+<li>You can also embed Ruby code inside of a String literal (interpolation)</li>
+</ul>
+<div class="highlight ruby code highlight"><pre><span class="nb">name</span> <span class="o">=</span> <span class="s2">"bob"</span>
+<span class="nb">puts</span> <span class="s2">"Your name is </span><span class="si">#{</span><span class="nb">name</span><span class="o">.</span><span class="n">capitalize</span><span class="si">}</span><span class="s2">"</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class=" escape">
+            <div id="slide-12" class="content">
+              <h1>Escape Sequences</h1><pre><code>\" - double quote
+\\ - single backslash
+\a - bell/alert
+\b - backspace
+\r - carriage return
+\n - newline
+\s - space
+\t - tab
+</code></pre>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
