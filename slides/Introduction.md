@@ -16,6 +16,13 @@
 
 ![Rails logo](images/rails.png "Rails logo")
 
+!SLIDE us
+
+# Who are we?
+
+* Matias Korhonen
+* Joao Cardoso
+
 !SLIDE examples
 
 # Websites based on Rails:
@@ -25,6 +32,15 @@
 * <http://www.basecamphq.com/>
 * <http://www.hhlinuxclub.org>
 * <http://wakify.com>
+
+!SLIDE course
+
+# Course Contents
+
+* Installing Ubuntu
+* Setting up the development environment
+* Basics of Ruby
+* Building a Rails application (a blog)
 
 !SLIDE links
 
