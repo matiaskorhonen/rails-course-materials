@@ -15,3 +15,10 @@ Except where otherwise mentioned, you can presume that the authors are:
 * Joao Cardoso
 * Matias Korhonen
 
+h2. Slidedown
+
+We use "Slidedown":http://github.com/nakajima/slidedown to generate the slides.
+
+You can regenerate all the slide by running rake in the root directory of the project.
+
+At the moment you need to have our "custom version of slidedown":http://github.com/k33l0r/slidedown to generate the slides as we use our own template.
