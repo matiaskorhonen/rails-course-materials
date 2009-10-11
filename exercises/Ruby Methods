@@ -17,6 +17,6 @@ h2. 3. Create a 'multiply' method to multiply any two given numbers.
 
 For example:
 
-sum(4, 6) # => 10
+multiply(2, 10) # => 20
 
 h2. 4. Repeat exercise 1, but this time specify a default value for the name.
