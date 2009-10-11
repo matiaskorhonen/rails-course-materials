@@ -1,0 +1,82 @@
+h1. Basic Ruby Exercises
+
+
+TODO: Convert to Pages and PDF.  Use same style as for all the documentation.
+
+
+Do all of the following exercises in irb.
+
+
+h2. 1. Numbers
+
+a. What is your age in seconds (convert from years)?
+
+b. How many minutes are there in December?
+
+c. If my pet tortoise is 3.79 billion (1 billion == 10^9) milliseconds old, how much is that in years?
+
+
+h2. 2. Strings
+
+a. Use the 'puts' command to experiment with strings:
+
+i. puts 'Hello World!'
+ii. puts 'I need more' + 'coffee'
+iii. puts 'Cake ' * 5
+iv. puts 'Cake' * 'Pie'
+
+b. Single and double quotes, what's the difference? Try the following:
+
+i. puts "You're great"
+   puts 'You\'re great!'
+
+   Why do we need the backslash in the second option?
+
+ii. puts "Every programming book has a \"Hello World\" example."
+    puts 'Every programming book has a "Hello World" example.'
+
+    Notice how we don't need to escape double quotes when they are surrounded by single quotes?
+    What happens if you try and escape the double quotes with backslashes in the second example?
+
+iii. Experiment with other escape sequences for a few minutes.  Try using both single and double quotes.
+
+
+h2. Variables, Assignment, and Conversions
+
+a. Try the following:
+
+i.  name = "Bob"
+    puts = "Hello " + name + "!"
+    puts "Hello #{name}!"
+
+    Why do we need the '#{}' in the second puts command?
+
+ii. age = 24
+    puts "You are " + age.to_s + " years old"
+
+    Now try the same without the .to_s part.  What happens?
+
+iii. Convert '12' to an integer
+
+iv.  Convert 56 to a string
+
+v.   Convert "99.999" to a float
+
+b. Use the .class method to find out what classes the following belong to.
+
+i. 56
+ii. 12345678901234567890
+iii. "Hello World!"
+iv. false
+v. true
+vi. 999.99
+
+c. Repeat 1.a, but this time put both your age and the result in variables.
+
+d. Use the online Ruby documentation (http://www.ruby-doc.org/core/) to find out how to do the following:
+
+i. Strip the surrounding spaces from "      Coffee!    "
+
+ii. Round 56.43 to the closest integer
+
+iii. Convert "Hello World!" to all capitals.
