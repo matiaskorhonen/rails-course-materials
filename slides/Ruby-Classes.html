@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Slides</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="./stylesheets/slides.css" media="screen" rel="stylesheet" charset="utf-8" type="text/css" />
+    <script src="./javascripts/jquery.js" type="text/javascript"></script>
+    <script src="./javascripts/jquery.easing.js" type="text/javascript"></script>
+    <script src="./javascripts/jquery.hash-changed.js" type="text/javascript"></script>
+    <script src="./javascripts/slides.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="slides">
+      <div id="track">
+        
+          <div class=" cover">
+            <div id="slide-0" class="content">
+              <h1><span style="font-family:'Bitstream Vera Serif', serif;font-size:80%"><span style="color:#a40800">Ruby on Rails</span> Course <span style="color:#8B8B8B">2009</span></span></h1><h2>Ruby: Classes</h2>
+            </div>
+          </div>
+        
+          <div class=" definition">
+            <div id="slide-1" class="content">
+              <h1>Class definition</h1><div class="highlight ruby code highlight"><pre><span class="k">class</span> <span class="nc">SomeClass</span>
+    <span class="k">def</span> <span class="nf">some_method</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class=" variables">
+            <div id="slide-2" class="content">
+              <h1>Instance variables</h1><div class="highlight ruby code highlight"><pre><span class="k">class</span> <span class="nc">Person</span>
+    <span class="vi">@name</span> <span class="o">=</span> <span class="s2">"Bob"</span>
+
+    <span class="k">def</span> <span class="nf">greet</span>
+        <span class="s2">"Welcome "</span> <span class="o">+</span> <span class="vi">@name</span> <span class="o">+</span> <span class="s2">"!"</span>
+    <span class="k">end</span>
+
+    <span class="k">def</span> <span class="nf">change_to_fred</span>
+        <span class="vi">@name</span> <span class="o">=</span> <span class="s2">"Fred"</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class=" usage">
+            <div id="slide-3" class="content">
+              <h1>Using the previous class</h1><div class="highlight ruby code highlight"><pre><span class="n">person</span> <span class="o">=</span> <span class="no">Person</span><span class="o">.</span><span class="n">new</span>
+<span class="nb">puts</span> <span class="n">person</span><span class="o">.</span><span class="n">greet</span> <span class="c1"># =&gt; "Welcome Bob!"</span>
+<span class="n">person</span><span class="o">.</span><span class="n">change_to_fred</span>
+<span class="nb">puts</span> <span class="n">person</span><span class="o">.</span><span class="n">greet</span> <span class="c1"># =&gt; "Welcome Fred!"</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class=" instantiation">
+            <div id="slide-4" class="content">
+              <h1>Instantiation</h1><ul>
+<li>The <strong>.initialize</strong> method is called when a new instance is created.</li>
+<li>Parameters passed to <strong>.new</strong> will be passed to the <strong>.initialize</strong> method.</li>
+</ul>
+<div class="highlight ruby code highlight"><pre><span class="k">class</span> <span class="nc">Person</span>
+    <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+        <span class="vi">@name</span> <span class="o">=</span> <span class="nb">name</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">person</span> <span class="o">=</span> <span class="no">Person</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">"Joe"</span><span class="p">)</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class=" access">
+            <div id="slide-5" class="content">
+              <h1>Accessing instance variables</h1><div class="highlight ruby code highlight"><pre><span class="k">class</span> <span class="nc">Person</span>
+  <span class="k">def</span> <span class="nf">name</span>
+    <span class="vi">@name</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">name</span><span class="o">=</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+    <span class="vi">@name</span> <span class="o">=</span> <span class="nb">name</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class=" attraccessor">
+            <div id="slide-6" class="content">
+              <h1>Attribute accessors</h1><p>The previous example could have been written like this:</p><div class="highlight ruby code highlight"><pre><span class="k">class</span> <span class="nc">Person</span>
+  <span class="kp">attr_accessor</span> <span class="ss">:name</span>
+<span class="k">end</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class=" accessors">
+            <div id="slide-7" class="content">
+              <h1>Available accessors</h1><ul>
+<li>
+<strong>attr_accessor</strong> will give you get/set functionality</li>
+<li>
+<strong>attr_reader</strong> will give only getter</li>
+<li>
+<strong>attr_writer</strong> will give only setter</li>
+</ul>
+            </div>
+          </div>
+        
+          <div class=" inheritance">
+            <div id="slide-8" class="content">
+              <h1>Inheritance</h1><ul>
+<li>Methods and variables can be inherited from another class.</li>
+<li>No multiple inheritance!</li>
+</ul>
+<div class="highlight ruby code highlight"><pre><span class="k">class</span> <span class="nc">Person</span>
+  <span class="kp">attr_accessor</span> <span class="ss">:name</span>
+<span class="k">end</span>
+
+<span class="k">class</span> <span class="nc">Employee</span> <span class="o">&lt;</span> <span class="no">Person</span>
+  <span class="kp">attr_accessor</span> <span class="ss">:position</span>
+<span class="k">end</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class=" accesscontrol">
+            <div id="slide-9" class="content">
+              <h1>Access control</h1><h2>Default:</h2><ul>
+<li>
+<strong>public</strong> methods are accessible by anyone</li>
+</ul>
+<h2>Others:</h2><ul>
+<li>
+<strong>protected</strong> methods are accessible also to child objects</li>
+<li>
+<strong>private</strong> methods are accessible only to the class that defines them</li>
+</ul>
+            </div>
+          </div>
+        
+          <div class=" accesscontrolexamples">
+            <div id="slide-10" class="content">
+              <h1>Access control example</h1><div class="highlight ruby code highlight"><pre><span class="k">class</span> <span class="nc">Person</span>
+  <span class="k">def</span> <span class="nf">name</span>
+    <span class="vi">@name</span>
+  <span class="k">end</span>
+
+  <span class="kp">protected</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="o">=</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+      <span class="vi">@name</span> <span class="o">=</span> <span class="nb">name</span>
+    <span class="k">end</span>
+
+  <span class="kp">private</span>
+    <span class="k">def</span> <span class="nf">change_to_bob</span>
+      <span class="vi">@name</span> <span class="o">=</span> <span class="s2">"Bob"</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+</pre></div>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
