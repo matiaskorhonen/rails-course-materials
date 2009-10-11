@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Slides</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="./stylesheets/slides.css" media="screen" rel="stylesheet" charset="utf-8" type="text/css" />
+    <script src="./javascripts/jquery.js" type="text/javascript"></script>
+    <script src="./javascripts/jquery.easing.js" type="text/javascript"></script>
+    <script src="./javascripts/jquery.hash-changed.js" type="text/javascript"></script>
+    <script src="./javascripts/slides.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="slides">
+      <div id="track">
+        
+          <div class=" cover">
+            <div id="slide-0" class="content">
+              <h1><span style="font-family:'Bitstream Vera Serif', serif;font-size:80%"><span style="color:#a40800">Ruby on Rails</span> Course <span style="color:#8B8B8B">2009</span></span></h1><h2>Ruby: Operators</h2>
+            </div>
+          </div>
+        
+          <div class=" assignment">
+            <div id="slide-1" class="content">
+              <h1>Assignment</h1><p>Assignment in Ruby is done using the equals sign (=).</p><div class="highlight ruby code highlight"><pre><span class="n">colour</span> <span class="o">=</span> <span class="s2">"red"</span>
+<span class="n">other_colour</span> <span class="o">=</span> <span class="nb">String</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">"blue"</span><span class="p">)</span>
+<span class="n">number</span> <span class="o">=</span> <span class="mi">123</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class=" self">
+            <div id="slide-2" class="content">
+              <h1>Self assignment</h1><div class="highlight ruby code highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>           <span class="c1"># =&gt; 1</span>
+<span class="n">x</span> <span class="o">+=</span> <span class="n">x</span>          <span class="c1"># =&gt; 2</span>
+<span class="n">x</span> <span class="o">-=</span> <span class="n">x</span>          <span class="c1"># =&gt; 0</span>
+<span class="n">x</span> <span class="o">+=</span> <span class="mi">4</span>          <span class="c1"># =&gt; 4</span>
+<span class="n">x</span> <span class="o">*=</span> <span class="n">x</span>          <span class="c1"># =&gt; 16</span>
+<span class="n">x</span> <span class="o">**=</span> <span class="n">x</span>         <span class="c1"># =&gt; 18446744073709551616 # Raise to the power</span>
+<span class="n">x</span> <span class="o">/=</span> <span class="n">x</span>          <span class="c1"># =&gt; 1</span>
+</pre></div><p>There are no increment/decrement operators in Ruby.</p>
+            </div>
+          </div>
+        
+          <div class=" multiple">
+            <div id="slide-3" class="content">
+              <h1>Multiple assignment</h1><p>You can assign values to multiple variables on one line.</p><div class="highlight ruby code highlight"><pre><span class="n">colour1</span><span class="p">,</span> <span class="n">colour2</span><span class="p">,</span> <span class="n">colour3</span> <span class="o">=</span> <span class="s2">"red"</span><span class="p">,</span> <span class="s2">"blue"</span><span class="p">,</span> <span class="s2">"green"</span>
+<span class="n">colours</span><span class="p">,</span> <span class="n">city</span> <span class="o">=</span> <span class="o">[</span><span class="s2">"red"</span><span class="p">,</span> <span class="s2">"blue"</span><span class="p">,</span> <span class="s2">"green"</span><span class="o">]</span><span class="p">,</span> <span class="s2">"Helsinki"</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class=" conditional">
+            <div id="slide-4" class="content">
+              <h1>Conditional assignment</h1><p>The operator ||= checks whether a variable is nil (or inexistent) and assigns an object to it if it is.</p><div class="highlight ruby code highlight"><pre><span class="n">configuration</span> <span class="o">||=</span> <span class="s2">"default value"</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class=" comparison">
+            <div id="slide-5" class="content">
+              <h1>Comparison operators</h1><table cellspacing="0">
+<tr>
+<th style="padding-right: 40px;">Operator</th>
+        <th>Description</th>
+    </tr>
+<tr>
+<td>==</td>
+        <td>Equivalency</td>
+    </tr>
+<tr>
+<td>!=</td>
+        <td>Inequality</td>
+    </tr>
+<tr>
+<td>&lt;</td>
+        <td>Less than</td>
+    </tr>
+<tr>
+<td>&gt;</td>
+        <td>Greater than</td>
+    </tr>
+<tr>
+<td>&gt;=</td>
+        <td>Greater than or equal to</td>
+    </tr>
+<tr>
+<td>&lt;=</td>
+        <td>Less than or equal to</td>
+    </tr>
+<tr>
+<td>&lt;=&gt;</td>
+        <td>
+            Combined comparison operator. Returns:
+            <ul>
+<li>0 if the values are equal</li>
+                <li>-1 if the second is greater than the first</li>
+                <li>1 if the first is greater than the second</li>
+            </ul>
+</td>
+    </tr>
+</table>
+            </div>
+          </div>
+        
+          <div class=" comparisonexamples">
+            <div id="slide-6" class="content">
+              <h1>Comparison operators</h1><h2>Examples</h2><div class="highlight ruby code highlight"><pre><span class="mi">5</span> <span class="o">==</span> <span class="mi">5</span>      <span class="c1"># =&gt; true</span>
+<span class="mi">5</span> <span class="o">!=</span> <span class="mi">4</span>      <span class="c1"># =&gt; true</span>
+<span class="mi">4</span> <span class="o">&gt;</span> <span class="mi">5</span>       <span class="c1"># =&gt; false</span>
+<span class="mi">4</span> <span class="o">&lt;</span> <span class="mi">5</span>       <span class="c1"># =&gt; true</span>
+<span class="mi">5</span> <span class="o">&lt;=&gt;</span> <span class="mi">5</span>     <span class="c1"># =&gt; 0</span>
+<span class="mi">5</span> <span class="o">&lt;=&gt;</span> <span class="mi">2</span>     <span class="c1"># =&gt; 1</span>
+<span class="mi">5</span> <span class="o">&lt;=&gt;</span> <span class="mi">6</span>     <span class="c1"># =&gt; -1</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class=" andornot">
+            <div id="slide-7" class="content">
+              <h1>And (&amp;&amp;), Or (||), Not (!)</h1><div class="highlight ruby code highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="kp">false</span>
+<span class="n">y</span> <span class="o">=</span> <span class="kp">true</span>
+
+<span class="n">x</span> <span class="o">&amp;&amp;</span> <span class="n">y</span>    <span class="c1"># =&gt; false</span>
+<span class="n">x</span> <span class="o">||</span> <span class="n">y</span>    <span class="c1"># =&gt; true</span>
+<span class="o">!</span><span class="n">x</span>        <span class="c1"># =&gt; true</span>
+<span class="o">!</span><span class="n">y</span>        <span class="c1"># =&gt; false</span>
+</pre></div>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
