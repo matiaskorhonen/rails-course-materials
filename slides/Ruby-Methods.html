@@ -25,7 +25,7 @@
               <p>Normal method call:
 </p>
 <div class="highlight ruby code highlight"><pre><span class="n">method_name</span><span class="p">(</span><span class="n">parameter1</span><span class="p">,</span> <span class="n">parameter2</span><span class="p">)</span>
-</pre></div><p>Sometimes there is no need for parentheses:
+</pre></div><p>Sometimes there is no need for parenthesis:
 </p>
 <div class="highlight ruby code highlight"><pre><span class="n">method_name</span>
 <span class="n">results</span> <span class="o">=</span> <span class="n">method_name</span> <span class="n">parameter1</span><span class="p">,</span> <span class="n">parameter2</span>
@@ -38,7 +38,7 @@
         
           <div class=" definitions">
             <div id="slide-2" class="content">
-              <h1>Defining a method</h1><div class="highlight ruby code highlight"><pre><span class="k">def</span> <span class="nf">output_something</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+              <h1>Defining a Method</h1><div class="highlight ruby code highlight"><pre><span class="k">def</span> <span class="nf">output_something</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
     <span class="nb">puts</span> <span class="n">value</span>
 <span class="k">end</span>
 </pre></div>
@@ -47,7 +47,7 @@
         
           <div class=" return">
             <div id="slide-3" class="content">
-              <h1>Return values</h1><p>Methods return the value of the last statement executed. The following code returns the value <strong>x+y</strong>.</p><div class="highlight ruby code highlight"><pre><span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+              <h1>Return Values</h1><p>Methods return the value of the last statement executed. The following code returns the value <strong>x+y</strong>.</p><div class="highlight ruby code highlight"><pre><span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
     <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
 <span class="k">end</span>
 </pre></div>
@@ -56,7 +56,7 @@
         
           <div class=" explicit">
             <div id="slide-4" class="content">
-              <h1>Explicit return</h1><p>An explicit return statement can also be used to return from a function, if necessary:</p><div class="highlight ruby code highlight"><pre><span class="k">def</span> <span class="nf">authenticate</span><span class="p">(</span><span class="n">username</span><span class="p">)</span>
+              <h1>Explicit Return</h1><p>An explicit return statement can also be used to return from a function, if necessary:</p><div class="highlight ruby code highlight"><pre><span class="k">def</span> <span class="nf">authenticate</span><span class="p">(</span><span class="n">username</span><span class="p">)</span>
     <span class="k">return</span> <span class="k">unless</span> <span class="n">username</span> <span class="o">==</span> <span class="s2">"bob"</span>
     <span class="nb">puts</span> <span class="s2">"Welcome, Bob!"</span>
 <span class="k">end</span>
@@ -66,7 +66,7 @@
         
           <div class=" default">
             <div id="slide-5" class="content">
-              <h1>Default values</h1><p>Default parameter values are used when the parameter is not specified, or is nil.</p><div class="highlight ruby code highlight"><pre><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="s2">"anonymous"</span><span class="p">)</span>
+              <h1>Default Values</h1><p>Default parameter values are used when the parameter is not specified, or is nil.</p><div class="highlight ruby code highlight"><pre><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="s2">"anonymous"</span><span class="p">)</span>
     <span class="nb">puts</span> <span class="s2">"Hello "</span> <span class="o">+</span> <span class="n">username</span> <span class="o">+</span> <span class="s2">"!"</span>
 <span class="k">end</span>
 </pre></div>

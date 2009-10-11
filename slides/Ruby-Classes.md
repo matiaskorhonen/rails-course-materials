@@ -5,7 +5,7 @@
 
 !SLIDE definition
 
-# Class definition
+# Class Definition
 
 @@@ ruby
 	class SomeClass
@@ -16,7 +16,7 @@
 
 !SLIDE variables
 
-# Instance variables
+# Instance Variables
 
 @@@ ruby
 	class Person
@@ -34,7 +34,7 @@
 
 !SLIDE usage
 
-# Using the previous class
+# Usage
 
 @@@ ruby
 	person = Person.new
@@ -62,7 +62,7 @@
 
 !SLIDE access
 
-# Accessing instance variables
+# Accessing Instance Variables
 
 @@@ ruby
 	class Person
@@ -78,7 +78,7 @@
 
 !SLIDE attraccessor
 
-# Attribute accessors
+# Attribute Accessors
 
 The previous example could have been written like this:
 
@@ -90,11 +90,9 @@ The previous example could have been written like this:
 
 !SLIDE accessors
 
-# Available accessors
-
 * **attr_accessor** will give you get/set functionality
-* **attr_reader** will give only getter
-* **attr_writer** will give only setter
+* **attr_reader** getter only
+* **attr_writer** setter only
 
 !SLIDE inheritance
 
@@ -115,7 +113,7 @@ The previous example could have been written like this:
 
 !SLIDE accesscontrol
 
-# Access control
+# Access Control
 
 ## Default:
 * **public** methods are accessible by anyone
@@ -126,7 +124,7 @@ The previous example could have been written like this:
 
 !SLIDE accesscontrolexamples
 
-# Access control example
+## Example
 
 @@@ ruby
 	class Person

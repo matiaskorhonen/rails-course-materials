@@ -5,7 +5,7 @@
 
 !SLIDE if
 
-# if, elsif, else
+# if ... elsif ... else
 
 @@@ ruby
 	a = 3
@@ -21,7 +21,7 @@
 
 !SLIDE shortif
 
-# Short if
+# Short If
 
 When you need a single if statement and the block has only one line of code.
 
@@ -76,7 +76,7 @@ or
 
 !SLIDE ternary
 
-# Ternary operator
+# Ternary Operator
 
 Instead of:
 

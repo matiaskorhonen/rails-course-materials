@@ -10,7 +10,7 @@ Normal method call:
 	method_name(parameter1, parameter2)
 @@@
 
-Sometimes there is no need for parentheses:
+Sometimes there is no need for parenthesis:
 @@@ ruby
 	method_name
 	results = method_name parameter1, parameter2
@@ -23,7 +23,7 @@ And sometimes you really need them:
 
 !SLIDE definitions
 
-# Defining a method
+# Defining a Method
 
 @@@ ruby
 	def output_something(value)
@@ -33,7 +33,7 @@ And sometimes you really need them:
 
 !SLIDE return
 
-# Return values
+# Return Values
 
 Methods return the value of the last statement executed. The following code returns the value **x+y**.
 
@@ -45,7 +45,7 @@ Methods return the value of the last statement executed. The following code retu
 
 !SLIDE explicit
 
-# Explicit return
+# Explicit Return
 
 An explicit return statement can also be used to return from a function, if necessary:
 
@@ -58,7 +58,7 @@ An explicit return statement can also be used to return from a function, if nece
 
 !SLIDE default
 
-# Default values
+# Default Values
 
 Default parameter values are used when the parameter is not specified, or is nil.
 

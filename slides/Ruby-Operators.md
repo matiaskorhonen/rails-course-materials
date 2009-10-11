@@ -17,7 +17,7 @@ Assignment in Ruby is done using the equals sign (=).
 
 !SLIDE self
 
-# Self assignment
+# Self Assignment
 
 @@@ ruby
 	x = 1           # => 1
@@ -33,7 +33,7 @@ There are no increment/decrement operators in Ruby.
 
 !SLIDE multiple
 
-# Multiple assignment
+# Multiple Assignment
 
 You can assign values to multiple variables on one line.
 
@@ -44,7 +44,7 @@ You can assign values to multiple variables on one line.
 
 !SLIDE conditional
 
-# Conditional assignment
+# Conditional Assignment
 
 The operator ||= checks whether a variable is nil (or inexistent) and assigns an object to it if it is.
 
@@ -54,7 +54,7 @@ The operator ||= checks whether a variable is nil (or inexistent) and assigns an
 
 !SLIDE comparison
 
-# Comparison operators
+# Comparison Operators
 
 <table cellspacing="0">
 	<tr>
@@ -107,7 +107,7 @@ The operator ||= checks whether a variable is nil (or inexistent) and assigns an
 
 !SLIDE comparisonexamples
 
-# Comparison operators
+# Comparison Operators
 
 ## Examples
 

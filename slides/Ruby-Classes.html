@@ -22,7 +22,7 @@
         
           <div class=" definition">
             <div id="slide-1" class="content">
-              <h1>Class definition</h1><div class="highlight ruby code highlight"><pre><span class="k">class</span> <span class="nc">SomeClass</span>
+              <h1>Class Definition</h1><div class="highlight ruby code highlight"><pre><span class="k">class</span> <span class="nc">SomeClass</span>
     <span class="k">def</span> <span class="nf">some_method</span>
     <span class="k">end</span>
 <span class="k">end</span>
@@ -32,7 +32,7 @@
         
           <div class=" variables">
             <div id="slide-2" class="content">
-              <h1>Instance variables</h1><div class="highlight ruby code highlight"><pre><span class="k">class</span> <span class="nc">Person</span>
+              <h1>Instance Variables</h1><div class="highlight ruby code highlight"><pre><span class="k">class</span> <span class="nc">Person</span>
     <span class="vi">@name</span> <span class="o">=</span> <span class="s2">"Bob"</span>
 
     <span class="k">def</span> <span class="nf">greet</span>
@@ -49,7 +49,7 @@
         
           <div class=" usage">
             <div id="slide-3" class="content">
-              <h1>Using the previous class</h1><div class="highlight ruby code highlight"><pre><span class="n">person</span> <span class="o">=</span> <span class="no">Person</span><span class="o">.</span><span class="n">new</span>
+              <h1>Usage</h1><div class="highlight ruby code highlight"><pre><span class="n">person</span> <span class="o">=</span> <span class="no">Person</span><span class="o">.</span><span class="n">new</span>
 <span class="nb">puts</span> <span class="n">person</span><span class="o">.</span><span class="n">greet</span> <span class="c1"># =&gt; "Welcome Bob!"</span>
 <span class="n">person</span><span class="o">.</span><span class="n">change_to_fred</span>
 <span class="nb">puts</span> <span class="n">person</span><span class="o">.</span><span class="n">greet</span> <span class="c1"># =&gt; "Welcome Fred!"</span>
@@ -76,7 +76,7 @@
         
           <div class=" access">
             <div id="slide-5" class="content">
-              <h1>Accessing instance variables</h1><div class="highlight ruby code highlight"><pre><span class="k">class</span> <span class="nc">Person</span>
+              <h1>Accessing Instance Variables</h1><div class="highlight ruby code highlight"><pre><span class="k">class</span> <span class="nc">Person</span>
   <span class="k">def</span> <span class="nf">name</span>
     <span class="vi">@name</span>
   <span class="k">end</span>
@@ -91,7 +91,7 @@
         
           <div class=" attraccessor">
             <div id="slide-6" class="content">
-              <h1>Attribute accessors</h1><p>The previous example could have been written like this:</p><div class="highlight ruby code highlight"><pre><span class="k">class</span> <span class="nc">Person</span>
+              <h1>Attribute Accessors</h1><p>The previous example could have been written like this:</p><div class="highlight ruby code highlight"><pre><span class="k">class</span> <span class="nc">Person</span>
   <span class="kp">attr_accessor</span> <span class="ss">:name</span>
 <span class="k">end</span>
 </pre></div>
@@ -100,13 +100,13 @@
         
           <div class=" accessors">
             <div id="slide-7" class="content">
-              <h1>Available accessors</h1><ul>
+              <ul>
 <li>
 <strong>attr_accessor</strong> will give you get/set functionality</li>
 <li>
-<strong>attr_reader</strong> will give only getter</li>
+<strong>attr_reader</strong> getter only</li>
 <li>
-<strong>attr_writer</strong> will give only setter</li>
+<strong>attr_writer</strong> setter only</li>
 </ul>
             </div>
           </div>
@@ -130,7 +130,7 @@
         
           <div class=" accesscontrol">
             <div id="slide-9" class="content">
-              <h1>Access control</h1><h2>Default:</h2><ul>
+              <h1>Access Control</h1><h2>Default:</h2><ul>
 <li>
 <strong>public</strong> methods are accessible by anyone</li>
 </ul>
@@ -145,7 +145,7 @@
         
           <div class=" accesscontrolexamples">
             <div id="slide-10" class="content">
-              <h1>Access control example</h1><div class="highlight ruby code highlight"><pre><span class="k">class</span> <span class="nc">Person</span>
+              <h2>Example</h2><div class="highlight ruby code highlight"><pre><span class="k">class</span> <span class="nc">Person</span>
   <span class="k">def</span> <span class="nf">name</span>
     <span class="vi">@name</span>
   <span class="k">end</span>
