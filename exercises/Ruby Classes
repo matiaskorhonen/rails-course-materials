@@ -1,6 +1,6 @@
 h1. Ruby Class Exercises
 
-h2. Create a Food class with one attribute, "delicious", and an initializer to set that attribute:
+h2. 1. Create a Food class with one attribute, "delicious", and an initializer to set that attribute:
 
 class Food
   attr_accessor :delicious
@@ -12,14 +12,15 @@ end
 
 Now add another attribute, "name", and extend the initializer to include the new attribute.
 
-h2. Create a new class, "Lunch", which inherits from the food class. 
+h2. 2. Create a new class, "Lunch", which inherits from the food class. 
+
 Add a new attribute, "Price" to the Lunch class.
 
 class Lunch < Food
   attr_accessor :price
 end
 
-h2. Overrides
+h2. 3. Overrides
 
 What happens when you call to_s on an instance of the Lunch class?
 
