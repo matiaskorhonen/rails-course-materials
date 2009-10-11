@@ -1,0 +1,24 @@
+h1. Ruby Block Exercises
+
+
+h2. 1. Iterate through an array
+
+Given an array of city names:
+
+cities = ['helsinki', 'tokio', 'johannesburg']
+
+Use the each block to capitalize each city name:
+
+cities.each do |city|
+  city.capitalize!
+end
+
+What is the significance of using the "bang" method (.capitalize!) with the exclamation mark?
+
+
+h2. 2. Upper Case Names
+
+Create an array of four names and use the each block to print out each name in upper case.
+
+Do not modify the original array and use the online Ruby documentation (http://www.ruby-doc.org/core/) to find out how to convert strings to upper case.
+

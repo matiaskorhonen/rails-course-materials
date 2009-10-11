@@ -1,0 +1,22 @@
+h1. Ruby Method Exercises
+
+
+h2. 1. Simple greeting
+
+Create a method which greets you when given a name. The method should return a string
+
+It should function as follows:
+
+name = "Bob"
+greet name # => "Hello Bob!"
+
+
+h2. 2. Repeat exercise 1, but instead of return a string use the 'puts' command to output the greeting 5 times
+
+h2. 3. Create a 'multiply' method to multiply any two given numbers.
+
+For example:
+
+sum(4, 6) # => 10
+
+h2. 4. Repeat exercise 1, but this time specify a default value for the name.
