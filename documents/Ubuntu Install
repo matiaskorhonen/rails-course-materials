@@ -43,9 +43,11 @@ You can close Firefox once the download has completed
 Right click on the Komodo-Edit file on the Desktop
 Select "Extract here"
 Open Terminal (Applications => Accessories => Terminal)
+
 Enter these commands (use the Tab key to autocomplete paths and file names):
 cd Desktop/Komodo-Edit-5.2.1-4108-linux-libcpp6-x86
 sudo sh install.sh
+
 Install Directory: /opt/Komodo-Edit-5
 Press Enter to install
 
