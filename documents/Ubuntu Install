@@ -1,0 +1,28 @@
+Ubuntu Install
+
+Insert and lock the removable hard drive
+Power on the computer
+Insert CD
+Press F1, when prompted ("SATA Cabling Error")
+Select English with arrow keys and Enter
+Press F3 to select the correct keymap (Finland)
+Press Enter to boot the Live CD ("Try Ubuntu without any change to your computer")
+Double-click the "Install" icon on the desktop
+
+Welcome
+  Select English as the install language
+Where are you?
+  Select the correct timezone by clicking on Finland in the map
+Keyboard Layout
+  The suggested keyboard layout should be "Finland", if not change it now
+Prepare disk space
+  Choose "Use the entire disk"
+  Make sure you select the correct disk. Do NOT install on the internal HDD
+Who are you?
+  Enter your name, a username and a password.
+  You can name the computer as you like.
+  Choose "Require a password to log in"
+Ready to Install
+  Check the selected options and click "Install"
+Remove CD and reboot when asked to do so.
+
