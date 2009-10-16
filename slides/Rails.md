@@ -35,7 +35,7 @@ It lets you write beautiful code by favouring convention over configuration.
 
 * Intended for Agile development
 * Can be used for extremely rapid development
-* Uses an **M**ode **V**iew **C**ontroller architecture (MVC)
+* Uses a **M**odel **V**iew **C**ontroller architecture (MVC)
 * Convention over Configuration
 * **D**on't **R**epeat **Y**ourself (DRY)
 * Several different servers and deployment strategies available
