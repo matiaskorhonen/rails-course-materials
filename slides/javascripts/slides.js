@@ -82,7 +82,7 @@
       if (dir == 'home') {
         event.preventDefault();
         event.stopPropagation();
-        location.href = '/';
+        location.href = '#0';
       } else {
         setIndex(getIndex() + dir);
       }

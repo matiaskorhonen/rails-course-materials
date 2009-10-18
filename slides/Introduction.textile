@@ -1,0 +1,55 @@
+!SLIDE cover
+
+h1. <span style="font-family:'Bitstream Vera Serif', serif;font-size:80%"><span style="color:#a40800">Ruby on Rails</span> Course <span style="color:#8B8B8B">2009</span></span>
+
+h2. Introduction
+
+!SLIDE ruby
+
+h1. What is Ruby?
+
+!images/ruby.png(Ruby logo)!
+
+
+!SLIDE rails
+
+h1. What's Ruby on Rails?
+
+!images/rails.png(Rails logo)!
+
+!SLIDE us
+
+h1. Who are we?
+
+* Matias Korhonen
+* Joao Cardoso
+
+!SLIDE examples
+
+h1. Websites based on Rails:
+
+* "http://www.github.com/":http://www.github.com/
+* "http://www.twitter.com/":http://www.twitter.com/
+* "http://www.basecamphq.com/":http://www.basecamphq.com/
+* "http://www.hhlinuxclub.org":http://www.hhlinuxclub.org
+* "http://wakify.com":http://wakify.com
+
+!SLIDE course
+
+h1. Course Contents
+
+* Installing Ubuntu
+* Setting up the development environment
+* Basics of Ruby
+* Building a Rails application (a blog)
+
+!SLIDE links
+
+Some links:   
+
+* "http://www.ruby-lang.org":http://www.ruby-lang.org
+* "http://rubyonrails.org/":http://rubyonrails.org/
+
+!SLIDE questions
+
+h1. Questions?
