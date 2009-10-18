@@ -1,11 +1,12 @@
 !SLIDE cover
 
-# <span style="font-family:'Bitstream Vera Serif', serif;font-size:80%"><span style="color:#a40800">Ruby on Rails</span> Course <span style="color:#8B8B8B">2009</span></span>
-## Ruby on Rails
+h1. <span style="font-family:'Bitstream Vera Serif', serif;font-size:80%"><span style="color:#a40800">Ruby on Rails</span> Course <span style="color:#8B8B8B">2009</span></span>
+
+h2. Ruby on Rails
 
 !SLIDE nohurt
 
-## Web development that doesn't hurt
+h2. Web development that doesn't hurt
 
 Ruby on Rails is an open source	open source web framework that's optimized for programmer happiness and sustainable productivity.
 
@@ -13,7 +14,7 @@ It lets you write beautiful code by favouring convention over configuration.
 
 !SLIDE who
 
-# Who's behind it?
+h1. Who's behind it?
 
 * Rails was created in 2003 by David Heinemeier Hansson
 * Has been extended since by over 1400 contributors
@@ -21,29 +22,29 @@ It lets you write beautiful code by favouring convention over configuration.
 
 !SLIDE examples
 
-# Websites based on Rails:
+h1. Websites based on Rails:
 
-* <http://www.github.com/>
-* <http://www.twitter.com/>
-* <http://www.basecamphq.com/>
-* <http://www.hhlinuxclub.org>
-* <http://wakify.com>
+* "http://www.github.com/":http://www.github.com/
+* "http://www.twitter.com/":http://www.twitter.com/
+* "http://www.basecamphq.com/":http://www.basecamphq.com/
+* "http://www.hhlinuxclub.org":http://www.hhlinuxclub.org
+* "http://wakify.com":http://wakify.com
 
 !SLIDE info
 
-# A few facts
+h1. A few facts
 
 * Intended for Agile development
 * Can be used for extremely rapid development
-* Uses a **M**odel **V**iew **C**ontroller architecture (MVC)
+* Uses a <strong>M</strong>odel <strong>V</strong>iew <strong>C</strong>ontroller architecture (MVC)
 * Convention over Configuration
-* **D**on't **R**epeat **Y**ourself (DRY)
+* <strong>D</strong>on't <strong>R</strong>epeat <strong>Y</strong>ourself (DRY)
 * Several different servers and deployment strategies available
 * Database abstraction!
 
 !SLIDE mvc
 
-# MVC
+h1. MVC
 
 <object data="./images/mvc.svg" width="640" height="400" type="image/svg+xml" name="MVC" />
 
@@ -53,7 +54,7 @@ It lets you write beautiful code by favouring convention over configuration.
 
 !SLIDE directories
 
-# Directory Structure
+h1. Directory Structure
 
 Some of the Rails directories.
 
@@ -68,4 +69,4 @@ Some of the Rails directories.
 
 !SLIDE end
 
-# Now lets write a Rails app!
+h1. Now lets write a Rails app!

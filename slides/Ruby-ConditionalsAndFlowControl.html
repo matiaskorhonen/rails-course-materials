@@ -1,28 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-  <head>
-    <title>Slides</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link href="./stylesheets/slides.css" media="screen" rel="stylesheet" charset="utf-8" type="text/css" />
-    <script src="./javascripts/jquery.js" type="text/javascript"></script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Slides</title>
+	<link href="./stylesheets/slides.css" media="screen" rel="stylesheet" charset="utf-8" type="text/css" />
+    <script src="./javascripts/jquery.min.js" type="text/javascript"></script>
     <script src="./javascripts/jquery.easing.js" type="text/javascript"></script>
     <script src="./javascripts/jquery.hash-changed.js" type="text/javascript"></script>
     <script src="./javascripts/slides.js" type="text/javascript"></script>
-  </head>
-  <body>
-    <div id="slides">
-      <div id="track">
-        
-          <div class=" cover">
-            <div id="slide-0" class="content">
-              <h1><span style="font-family:'Bitstream Vera Serif', serif;font-size:80%"><span style="color:#a40800">Ruby on Rails</span> Course <span style="color:#8B8B8B">2009</span></span></h1><h2>Ruby: Conditionals and Flow Control</h2>
-            </div>
-          </div>
-        
-          <div class=" if">
-            <div id="slide-1" class="content">
-              <h1>if ... elsif ... else</h1><div class="highlight ruby code highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
+</head>
+
+<body>
+	<div id="slides">
+		<div id="track">
+			
+				<div class="cover">
+					<div id="slide-0" class="content">
+						<h1><span style="font-family:'Bitstream Vera Serif', serif;font-size:80%"><span style="color:#a40800">Ruby on Rails</span> Course <span style="color:#8B8B8B">2009</span></span></h1>
+<h2>Ruby: Conditionals and Flow Control</h2>
+					</div>
+				</div>
+			
+				<div class="if">
+					<div id="slide-1" class="content">
+						<h1>if &#8230; elsif &#8230; else</h1>
+<div class="code"><div class="highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">4</span>
   <span class="n">a</span> <span class="o">=</span> <span class="mi">7</span>
 <span class="k">elsif</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">0</span>
@@ -31,119 +35,133 @@
   <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="k">end</span>
 <span class="nb">print</span> <span class="n">a</span> <span class="c1"># =&gt; 5</span>
-</pre></div>
-            </div>
-          </div>
-        
-          <div class=" shortif">
-            <div id="slide-2" class="content">
-              <h1>Short If</h1><p>When you need a single if statement and the block has only one line of code.</p><div class="highlight ruby code highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+</pre></div></div>
+					</div>
+				</div>
+			
+				<div class="shortif">
+					<div id="slide-2" class="content">
+						<h1>Short If</h1>
+<p>When you need a single if statement and the block has only one line of code.</p>
+<div class="code"><div class="highlight"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">a</span> <span class="o">=</span> <span class="mi">7</span> <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">4</span>
 <span class="nb">print</span> <span class="n">a</span> <span class="c1"># =&gt; 5</span>
-</pre></div>
-            </div>
-          </div>
-        
-          <div class=" unless">
-            <div id="slide-3" class="content">
-              <h1>Unless</h1><ul>
-<li>The <strong>opposite of if</strong> (executed when false)</li>
-<li>More expressive than an if statement with a negated variable</li>
+</pre></div></div>
+					</div>
+				</div>
+			
+				<div class="unless">
+					<div id="slide-3" class="content">
+						<h1>Unless</h1>
+<ul>
+	<li>The <b>opposite of if</b> (executed when false)</li>
+	<li>More expressive than an if statement with a negated variable</li>
 </ul>
-<div class="highlight ruby code highlight"><pre><span class="n">my_city</span> <span class="o">=</span> <span class="s2">"Helsinki"</span>
-<span class="k">unless</span> <span class="n">my_city</span> <span class="o">==</span> <span class="s2">"Helsinki"</span>
-  <span class="nb">print</span> <span class="s2">"I don't live in Helsinki"</span>
+<div class="code"><div class="highlight"><pre><span class="n">my_city</span> <span class="o">=</span> <span class="s2">&quot;Helsinki&quot;</span>
+<span class="k">unless</span> <span class="n">my_city</span> <span class="o">==</span> <span class="s2">&quot;Helsinki&quot;</span>
+  <span class="nb">print</span> <span class="s2">&quot;I don&#39;t live in Helsinki&quot;</span>
 <span class="k">end</span>
-</pre></div><p>or</p><div class="highlight ruby code highlight"><pre><span class="n">my_city</span> <span class="o">=</span> <span class="s2">"Helsinki"</span>
-<span class="nb">print</span> <span class="s2">"I don't live in Helsinki"</span> <span class="k">unless</span> <span class="n">my_city</span> <span class="o">==</span> <span class="s2">"Helsinki"</span>
-</pre></div>
-            </div>
-          </div>
-        
-          <div class=" case">
-            <div id="slide-4" class="content">
-              <h1>Case</h1><div class="highlight ruby code highlight"><pre><span class="k">case</span> <span class="n">n</span>
-  <span class="k">when</span> <span class="mi">0</span> 
-    <span class="nb">puts</span> <span class="s1">'You typed zero'</span>
-  <span class="k">when</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span> 
-    <span class="nb">puts</span> <span class="s1">'n is a perfect square'</span>
-  <span class="k">when</span> <span class="mi">2</span> 
-    <span class="nb">puts</span> <span class="s1">'n is a prime number'</span>
-    <span class="nb">puts</span> <span class="s1">'n is an even number'</span>
-  <span class="k">when</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span> 
-    <span class="nb">puts</span> <span class="s1">'n is a prime number'</span>
-  <span class="k">when</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span> 
-    <span class="nb">puts</span> <span class="s1">'n is an even number'</span>
-  <span class="k">else</span>              
-    <span class="nb">puts</span> <span class="s1">'Only single-digit numbers are allowed'</span>
+</pre></div></div><p>or</p>
+<div class="code"><div class="highlight"><pre><span class="n">my_city</span> <span class="o">=</span> <span class="s2">&quot;Helsinki&quot;</span>
+<span class="nb">print</span> <span class="s2">&quot;I don&#39;t live in Helsinki&quot;</span> <span class="k">unless</span> <span class="n">my_city</span> <span class="o">==</span> <span class="s2">&quot;Helsinki&quot;</span>
+</pre></div></div>
+					</div>
+				</div>
+			
+				<div class="case">
+					<div id="slide-4" class="content">
+						<h1>Case</h1>
+<div class="code"><div class="highlight"><pre><span class="k">case</span> <span class="n">n</span>
+<span class="k">when</span> <span class="mi">0</span> 
+  <span class="nb">puts</span> <span class="s1">&#39;You typed zero&#39;</span>
+<span class="k">when</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span> 
+  <span class="nb">puts</span> <span class="s1">&#39;n is a perfect square&#39;</span>
+<span class="k">when</span> <span class="mi">2</span> 
+  <span class="nb">puts</span> <span class="s1">&#39;n is a prime number&#39;</span>
+  <span class="nb">puts</span> <span class="s1">&#39;n is an even number&#39;</span>
+<span class="k">when</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span> 
+  <span class="nb">puts</span> <span class="s1">&#39;n is a prime number&#39;</span>
+<span class="k">when</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span> 
+  <span class="nb">puts</span> <span class="s1">&#39;n is an even number&#39;</span>
+<span class="k">else</span>              
+  <span class="nb">puts</span> <span class="s1">&#39;Only single-digit numbers are allowed&#39;</span>
 <span class="k">end</span>
-</pre></div>
-            </div>
-          </div>
-        
-          <div class=" ternary">
-            <div id="slide-5" class="content">
-              <h1>Ternary Operator</h1><p>Instead of:</p><div class="highlight ruby code highlight"><pre><span class="n">customer</span> <span class="o">=</span> <span class="s2">"Bob"</span>
-<span class="k">if</span> <span class="n">customer</span> <span class="o">==</span> <span class="s2">"Bob"</span>
-  <span class="nb">puts</span> <span class="s2">"Hello Bob!"</span>
+</pre></div></div>
+					</div>
+				</div>
+			
+				<div class="ternary">
+					<div id="slide-5" class="content">
+						<h1>Ternary Operator</h1>
+<p>Instead of:</p>
+<div class="code"><div class="highlight"><pre><span class="n">customer</span> <span class="o">=</span> <span class="s2">&quot;Bob&quot;</span>
+<span class="k">if</span> <span class="n">customer</span> <span class="o">==</span> <span class="s2">&quot;Bob&quot;</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hello Bob!&quot;</span>
 <span class="k">else</span>
-  <span class="nb">puts</span> <span class="s2">"You're not Bob!"</span>
+  <span class="nb">puts</span> <span class="s2">&quot;You&#39;re not Bob!&quot;</span>
 <span class="k">end</span>
-</pre></div><p>You can have:</p><div class="highlight ruby code highlight"><pre><span class="n">customer</span> <span class="o">=</span> <span class="s2">"Bob"</span>
-<span class="nb">puts</span> <span class="n">customer</span> <span class="o">==</span> <span class="s2">"Bob"</span> <span class="p">?</span> <span class="s2">"Hello Bob!"</span> <span class="p">:</span> <span class="s2">"You're not Bob!"</span>
-</pre></div>
-            </div>
-          </div>
-        
-          <div class=" while">
-            <div id="slide-6" class="content">
-              <h1>While</h1><div class="highlight ruby code highlight"><pre><span class="k">while</span> <span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span>
+</pre></div></div><p>You can have:</p>
+<div class="code"><div class="highlight"><pre><span class="n">customer</span> <span class="o">=</span> <span class="s2">&quot;Bob&quot;</span>
+<span class="nb">puts</span> <span class="n">customer</span> <span class="o">==</span> <span class="s2">&quot;Bob&quot;</span> <span class="p">?</span> <span class="s2">&quot;Hello Bob!&quot;</span> <span class="p">:</span> <span class="s2">&quot;You&#39;re not Bob!&quot;</span>
+</pre></div></div>
+					</div>
+				</div>
+			
+				<div class="while">
+					<div id="slide-6" class="content">
+						<h1>While</h1>
+<div class="code"><div class="highlight"><pre><span class="k">while</span> <span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span>
   <span class="o">&lt;.</span><span class="n">.</span><span class="o">.</span><span class="n">code</span> <span class="n">block</span><span class="o">.</span><span class="n">.</span><span class="o">.</span><span class="n">&gt;</span>
 <span class="k">end</span>
-</pre></div><p>The code block will be executed again and again, as long as the expression evaluates to <strong>true</strong>.</p>
-            </div>
-          </div>
-        
-          <div class=" until">
-            <div id="slide-7" class="content">
-              <h1>Until</h1><p>Unlike the while statement, the code block for the until loop will execute as long as the expression evaluates to false.</p><div class="highlight ruby code highlight"><pre><span class="k">until</span> <span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span>
+</pre></div></div><p>The code block will be executed again and again, as long as the expression evaluates to <b>true</b>.</p>
+					</div>
+				</div>
+			
+				<div class="until">
+					<div id="slide-7" class="content">
+						<h1>Until</h1>
+<p>Unlike the while statement, the code block for the until loop will execute as long as the expression evaluates to false.</p>
+<div class="code"><div class="highlight"><pre><span class="k">until</span> <span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span>
   <span class="o">&lt;.</span><span class="n">.</span><span class="o">.</span><span class="n">code</span> <span class="n">block</span><span class="o">.</span><span class="n">.</span><span class="o">.</span><span class="n">&gt;</span>
 <span class="k">end</span>
-</pre></div>
-            </div>
-          </div>
-        
-          <div class=" for">
-            <div id="slide-8" class="content">
-              <h1>For</h1><div class="highlight ruby code highlight"><pre><span class="k">for</span> <span class="n">article</span> <span class="k">in</span> <span class="n">articles</span> <span class="k">do</span>
+</pre></div></div>
+					</div>
+				</div>
+			
+				<div class="for">
+					<div id="slide-8" class="content">
+						<h1>For</h1>
+<div class="code"><div class="highlight"><pre><span class="k">for</span> <span class="n">article</span> <span class="k">in</span> <span class="n">articles</span> <span class="k">do</span>
   <span class="nb">puts</span> <span class="n">article</span><span class="o">.</span><span class="n">title</span>
 <span class="k">end</span>
-</pre></div>
-            </div>
-          </div>
-        
-          <div class=" times">
-            <div id="slide-9" class="content">
-              <h1>Times</h1><div class="highlight ruby code highlight"><pre><span class="c1"># Display 'Hello' 10 times</span>
+</pre></div></div>
+					</div>
+				</div>
+			
+				<div class="times">
+					<div id="slide-9" class="content">
+						<h1>Times</h1>
+<div class="code"><div class="highlight"><pre><span class="c1"># Display &#39;Hello&#39; 10 times</span>
 <span class="mi">10</span><span class="o">.</span><span class="n">times</span> <span class="k">do</span>
-  <span class="nb">puts</span> <span class="s2">"Hello"</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hello&quot;</span>
 <span class="k">end</span>
 
 <span class="c1"># Display powers of two</span>
 <span class="mi">10</span><span class="o">.</span><span class="n">times</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
   <span class="nb">puts</span> <span class="mi">2</span><span class="o">**</span><span class="n">i</span>
 <span class="k">end</span>
-</pre></div>
-            </div>
-          </div>
-        
-          <div class=" return">
-            <div id="slide-10" class="content">
-              <h1>Return</h1><p>Causes the method in which it appears to exit at that point and return the value specified. Just calling return without supplying an argument will return nil.</p>
-            </div>
-          </div>
-        
-      </div>
-    </div>
-  </body>
+</pre></div></div>
+					</div>
+				</div>
+			
+				<div class="return">
+					<div id="slide-10" class="content">
+						<h1>Return</h1>
+<p>Causes the method in which it appears to exit at that point and return the value specified. Just calling return without supplying an argument will return nil.</p>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+</body>
 </html>

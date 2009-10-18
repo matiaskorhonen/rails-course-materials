@@ -1,56 +1,57 @@
 !SLIDE cover
 
-# <span style="font-family:'Bitstream Vera Serif', serif;font-size:80%"><span style="color:#a40800">Ruby on Rails</span> Course <span style="color:#8B8B8B">2009</span></span>
-## Ruby: Basics
+h1. <span style="font-family:'Bitstream Vera Serif', serif;font-size:80%"><span style="color:#a40800">Ruby on Rails</span> Course <span style="color:#8B8B8B">2009</span></span>
+
+h2. Ruby: Basics
 
 !SLIDE irb
 
-# Interactive Ruby (irb)
+h1. Interactive Ruby (irb)
 
 Irb is an interactive interface to Ruby
 
 * Mainly used for testing small snippets of code.
-* Run by executing **irb** in a terminal
-* Online version at <http://tryruby.sophrinix.com>
+* Run by executing *irb* in a terminal
+* Online version at "http://tryruby.sophrinix.com":http://tryruby.sophrinix.com
 
 !SLIDE datatypes
 
-# Datatypes
+h1. Datatypes
 
 Almost everything in Ruby is an object. Try the following in irb:
 
 @@@ ruby
-    123.class
-    999999999999999999999999999999999999999999999.class
-    nil.class
-    true.class
-    "hello world".class
-    :symbol.class
+123.class
+999999999999999999999999999999999999999999999.class
+nil.class
+true.class
+"hello world".class
+:symbol.class
 @@@
 
 !SLIDE constants
 
-# Constants
+h1. Constants
 
 * Constants always start with capital letters
 * You can change constants in Ruby, but you shouldn't
 
 @@@ ruby
-    Constant = 5    # This is a constant
-    constant = 5    # This is not
+Constant = 5    # This is a constant
+constant = 5    # This is not
 @@@
 
 !SLIDE symbols
 
-# Symbols
+h1. Symbols
 
 Every time you type a string, Ruby makes a new object:
 
 @@@ ruby
-    irb> "live long and prosper".object_id
-    => -606662268
-    irb> "live long and prosper".object_id
-    => -606666538
+irb> "live long and prosper".object_id
+=> -606662268
+irb> "live long and prosper".object_id
+=> -606666538
 @@@
 
 Notice that the object ID returned by irb is different even for the same two strings.
@@ -60,44 +61,44 @@ Notice that the object ID returned by irb is different even for the same two str
 To save memory Ruby has provided "symbols"
 
 @@@ ruby
-    irb> :live_long_and_prosper.object_id
-    => 150808
-    irb> :live_long_and_prosper.object_id
-    => 150808
+irb> :live_long_and_prosper.object_id
+=> 150808
+irb> :live_long_and_prosper.object_id
+=> 150808
 @@@
 
 Symbols are often used as hash keys.
 
 !SLIDE hashes
 
-# Hashes
+h1. Hashes
 
 * Hashes are like dictionaries
 * You have a key, a reference, and you look it up to find the associated object, the definition.
 
 @@@ ruby
-    hash = { :leia => "Princess from Alderaan", 
-             :han => "Rebel without a cause",
-             :luke => "Farmboy turned Jedi" }
+hash = { :leia => "Princess from Alderaan", 
+         :han => "Rebel without a cause",
+         :luke => "Farmboy turned Jedi" }
 @@@
 
 !SLIDE arrays
 
-# Arrays
+h1. Arrays
 
 Arrays are a lot like hashes, but the keys are always consecutive numbers. 
 
 @@@ ruby
-    array = ["This", "is", "an array"]
-    puts array[0] # => "This"
-    puts array[3] # => nil
+array = ["This", "is", "an array"]
+puts array[0] # => "This"
+puts array[3] # => nil
 @@@
 
 Using an out of range index will return nil.
 
 !SLIDE strings
 
-# Strings
+h1. Strings
 
 * String literals
 * Single quotes
@@ -107,84 +108,85 @@ Using an out of range index will return nil.
 
 !SLIDE literals
 
-# String Literals
+h1. String Literals
 
 @@@ ruby
-    puts 'Hello world'
-    puts "Hello world"
+puts 'Hello world'
+puts "Hello world"
 
-    puts "Betty's pie shop"
-    puts 'Betty\'s pie shop'
+puts "Betty's pie shop"
+puts 'Betty\'s pie shop'
 @@@
 
 !SLIDE singlequotes
 
-# Single Quotes
+h1. Single Quotes
 
 Single quotes only support two escape sequences:
 
 @@@
-    \' - single quote
-    \\ - single backslash
+\' - single quote
+\\ - single backslash
 @@@
 
 !SLIDE doublequotes
 
-# Double Quotes
+h1. Double Quotes
 
 * Double quotes allow for many more escape sequences than single quotes.
 * You can also embed Ruby code inside of a String literal (interpolation)
 
 @@@ ruby
-    name = "bob"
-    puts "Your name is #{name.capitalize}"
+name = "bob"
+puts "Your name is #{name.capitalize}"
 @@@
 
 !SLIDE escape
 
-# Escape Sequences
+h1. Escape Sequences
 
 @@@
-    \" - double quote
-    \\ - single backslash
-    \a - bell/alert
-    \b - backspace
-    \r - carriage return
-    \n - newline
-    \s - space
-    \t - tab
+\" - double quote
+\\ - single backslash
+\a - bell/alert
+\b - backspace
+\r - carriage return
+\n - newline
+\s - space
+\t - tab
 @@@
 
 !SLIDE longstrings
 
-# Very Long Strings
+h1. Very Long Strings
 
 There are several methods for this, but here's a simple one:
 
 @@@ ruby
-    poem = %{My toast has flown from my hand
-    And my toast has gone to the
-    moon.
-    But when I saw it on television,
-    Planting our flag on Halley's
-    comet,
-    More still did I want to eat it.}
+poem = %{My toast has flown from my hand
+And my toast has gone to the
+moon.
+But when I saw it on television,
+Planting our flag on Halley's
+comet,
+More still did I want to eat it.}
 @@@
 
 !SLIDE numbers
 
-# Numbers
-## Integers and Floats
+h1. Numbers
+
+h2. Integers and Floats
 
 The basic numeric datatypes in Ruby are integers and floats.
 
 Number operators:
 
 @@@
-    +  addition
-    -  subtraction
-    /  division
-    *  multiplication
-    ** exponent (e.g. 26**3 == 263)
-    %  modulus (the remainder of two divided numbers)
++  addition
+-  subtraction
+/  division
+*  multiplication
+** exponent (e.g. 26**3 == 263)
+%  modulus (the remainder of two divided numbers)
 @@@

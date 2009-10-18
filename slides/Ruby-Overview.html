@@ -1,104 +1,117 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-  <head>
-    <title>Slides</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link href="./stylesheets/slides.css" media="screen" rel="stylesheet" charset="utf-8" type="text/css" />
-    <script src="./javascripts/jquery.js" type="text/javascript"></script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Slides</title>
+	<link href="./stylesheets/slides.css" media="screen" rel="stylesheet" charset="utf-8" type="text/css" />
+    <script src="./javascripts/jquery.min.js" type="text/javascript"></script>
     <script src="./javascripts/jquery.easing.js" type="text/javascript"></script>
     <script src="./javascripts/jquery.hash-changed.js" type="text/javascript"></script>
     <script src="./javascripts/slides.js" type="text/javascript"></script>
-  </head>
-  <body>
-    <div id="slides">
-      <div id="track">
-        
-          <div class=" cover">
-            <div id="slide-0" class="content">
-              <h1><span style="font-family:'Bitstream Vera Serif', serif;font-size:80%"><span style="color:#a40800">Ruby on Rails</span> Course <span style="color:#8B8B8B">2009</span></span></h1><h2>Ruby: Overview</h2>
-            </div>
-          </div>
-        
-          <div class=" facts">
-            <div id="slide-1" class="content">
-              <h1>Quick Facts</h1><ul>
-<li>First released in <strong>1995</strong> by Yukihiro Matsumoto ("Matz")</li>
-<li>Comes preinstalled in most major Linux distributions and OS X</li>
-<li>Available for Windows</li>
-<li>Influenced by Perl, Smalltalk, Eiffel, Ada, Lisp, and Python</li>
+</head>
+
+<body>
+	<div id="slides">
+		<div id="track">
+			
+				<div class="cover">
+					<div id="slide-0" class="content">
+						<h1><span style="font-family:'Bitstream Vera Serif', serif;font-size:80%"><span style="color:#a40800">Ruby on Rails</span> Course <span style="color:#8B8B8B">2009</span></span></h1>
+<h2>Ruby: Overview</h2>
+					</div>
+				</div>
+			
+				<div class="facts">
+					<div id="slide-1" class="content">
+						<h1>Quick Facts</h1>
+<ul>
+	<li>First released in <strong>1995</strong> by Yukihiro Matsumoto (&#8220;Matz&#8221;)</li>
+	<li>Comes preinstalled in most major Linux distributions and OS X</li>
+	<li>Available for Windows</li>
+	<li>Influenced by Perl, Smalltalk, Eiffel, Ada, Lisp, and Python</li>
 </ul>
-            </div>
-          </div>
-        
-          <div class=" oo">
-            <div id="slide-2" class="content">
-              <h1>Object Oriented</h1><ul>
-<li><strong>Every value in Ruby is an object</strong></li>
-<li>nil is an object</li>
-<li>true is an object</li>
-<li>12131 is an object</li>
+					</div>
+				</div>
+			
+				<div class="oo">
+					<div id="slide-2" class="content">
+						<h1>Object Oriented</h1>
+<ul>
+	<li><strong>Every value in Ruby is an object</strong></li>
+	<li>nil is an object</li>
+	<li>true is an object</li>
+	<li>12131 is an object</li>
 </ul>
-            </div>
-          </div>
-        
-          <div class=" mixins">
-            <div id="slide-3" class="content">
-              <h1>Mixins</h1><p>In addition to classes, Ruby has modules.</p><ul>
-<li>A module has methods, just like a class, but it has <strong>no instances</strong>
-</li>
-<li>Instead, a module can be included, or "mixed in", to a class, which adds the methods of that module to the class</li>
-<li>Like inheritence, but more flexible</li>
-<li>A class can include many modules</li>
-<li>Helps with code reusability</li>
+					</div>
+				</div>
+			
+				<div class="mixins">
+					<div id="slide-3" class="content">
+						<h1>Mixins</h1>
+<p>In addition to classes, Ruby has modules.</p>
+<ul>
+	<li>A module has methods, just like a class, but it has <strong>no instances</strong></li>
+	<li>Instead, a module can be included, or &#8220;mixed in&#8221;, to a class, which adds the methods of that module to the class</li>
+	<li>Like inheritence, but more flexible</li>
+	<li>A class can include many modules</li>
+	<li>Helps with code reusability</li>
 </ul>
-            </div>
-          </div>
-        
-          <div class=" dynamic">
-            <div id="slide-4" class="content">
-              <h1>Dynamic</h1><ul>
-<li><strong>Ruby is very dynamic</strong></li>
-<li>Ruby programs aren't compiled</li>
-<li>A program can modify its own definitions while it's running ("monkey patching")</li>
-<li>Variables in Ruby are dynamically typed ("duck typing")</li>
+					</div>
+				</div>
+			
+				<div class="dynamic">
+					<div id="slide-4" class="content">
+						<h1>Dynamic</h1>
+<ul>
+	<li><strong>Ruby is very dynamic</strong></li>
+	<li>Ruby programs aren&#8217;t compiled</li>
+	<li>A program can modify its own definitions while it&#8217;s running (&#8220;monkey patching&#8221;)</li>
+	<li>Variables in Ruby are dynamically typed (&#8220;duck typing&#8221;)</li>
 </ul>
-            </div>
-          </div>
-        
-          <div class=" variables">
-            <div id="slide-5" class="content">
-              <h1>Variables and Scope</h1><p>The name of a variable automatically determines its scope.</p><ul>
-<li>x is local variable (or something besides a variable)</li>
-<li>$x is a global variable</li>
-<li>@x is an instance variable</li>
-<li>@@x is a class variable</li>
+					</div>
+				</div>
+			
+				<div class="variables">
+					<div id="slide-5" class="content">
+						<h1>Variables and Scope</h1>
+<p>The name of a variable automatically determines its scope.</p>
+<ul>
+	<li>x is local variable (or something besides a variable)</li>
+	<li>$x is a global variable</li>
+	<li>@x is an instance variable</li>
+	<li>@@x is a class variable</li>
 </ul>
-            </div>
-          </div>
-        
-          <div class=" blocks">
-            <div id="slide-6" class="content">
-              <h1>Blocks</h1><p>Blocks are one of Ruby's most unique and most loved features.</p><div class="highlight ruby code highlight"><pre><span class="n">cities</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">city</span><span class="o">|</span>
+					</div>
+				</div>
+			
+				<div class="blocks">
+					<div id="slide-6" class="content">
+						<h1>Blocks</h1>
+<p>Blocks are one of Ruby&#8217;s most unique and most loved features.</p>
+<div class="code"><div class="highlight"><pre><span class="n">cities</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">city</span><span class="o">|</span>
   <span class="n">city</span><span class="o">.</span><span class="n">upcase!</span>
 <span class="k">end</span>
-</pre></div>
-            </div>
-          </div>
-        
-          <div class=" editors">
-            <div id="slide-7" class="content">
-              <h1>Editors</h1><p>Almost any text editor will do.</p><ul>
-<li>Komodo Edit</li>
-<li>Vim</li>
-<li>TextMate</li>
-<li>NetBeans</li>
-<li>Aptana Studio</li>
+</pre></div></div>
+					</div>
+				</div>
+			
+				<div class="editors">
+					<div id="slide-7" class="content">
+						<h1>Editors</h1>
+<p>Almost any text editor will do.</p>
+<ul>
+	<li>Komodo Edit</li>
+	<li>Vim</li>
+	<li>TextMate</li>
+	<li>NetBeans</li>
+	<li>Aptana Studio</li>
 </ul>
-            </div>
-          </div>
-        
-      </div>
-    </div>
-  </body>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+</body>
 </html>
